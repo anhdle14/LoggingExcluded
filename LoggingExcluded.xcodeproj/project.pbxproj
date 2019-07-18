@@ -10,6 +10,7 @@
 		B2175F5C22E0D51400F2C14F /* LoggingExcluded.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2175F5222E0D51400F2C14F /* LoggingExcluded.framework */; };
 		B2175F6122E0D51400F2C14F /* LoggingExcludedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2175F6022E0D51400F2C14F /* LoggingExcludedTests.swift */; };
 		B2175F6322E0D51400F2C14F /* LoggingExcluded.h in Headers */ = {isa = PBXBuildFile; fileRef = B2175F5522E0D51400F2C14F /* LoggingExcluded.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B2175F6D22E0D54400F2C14F /* LoggingExcluded.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2175F6C22E0D54400F2C14F /* LoggingExcluded.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		B2175F5B22E0D51400F2C14F /* LoggingExcludedTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoggingExcludedTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2175F6022E0D51400F2C14F /* LoggingExcludedTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggingExcludedTests.swift; sourceTree = "<group>"; };
 		B2175F6222E0D51400F2C14F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B2175F6C22E0D54400F2C14F /* LoggingExcluded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggingExcluded.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			children = (
 				B2175F5522E0D51400F2C14F /* LoggingExcluded.h */,
 				B2175F5622E0D51400F2C14F /* Info.plist */,
+				B2175F6C22E0D54400F2C14F /* LoggingExcluded.swift */,
 			);
 			path = LoggingExcluded;
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 				TargetAttributes = {
 					B2175F5122E0D51300F2C14F = {
 						CreatedOnToolsVersion = 11.0;
+						LastSwiftMigration = 1100;
 					};
 					B2175F5A22E0D51400F2C14F = {
 						CreatedOnToolsVersion = 11.0;
@@ -195,6 +199,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2175F6D22E0D54400F2C14F /* LoggingExcluded.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +345,7 @@
 		B2175F6722E0D51400F2C14F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = CMAS8QVKR2;
@@ -356,6 +362,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = me.anhdle14.LoggingExcluded;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -364,6 +371,7 @@
 		B2175F6822E0D51400F2C14F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = CMAS8QVKR2;
@@ -388,6 +396,7 @@
 		B2175F6A22E0D51400F2C14F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CMAS8QVKR2;
 				INFOPLIST_FILE = LoggingExcludedTests/Info.plist;
@@ -406,6 +415,7 @@
 		B2175F6B22E0D51400F2C14F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CMAS8QVKR2;
 				INFOPLIST_FILE = LoggingExcludedTests/Info.plist;
